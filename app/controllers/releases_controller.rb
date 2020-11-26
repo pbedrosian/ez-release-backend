@@ -15,6 +15,12 @@ class ReleasesController < ApplicationController
         render json: release.save ? release : {message: release.errors.full_messages}
     end
 
+    def update
+        release = Release.find_by_id(params[:id])
+        release.update(releases_params)
+        render json: release.save ? release : {message: release.errors.full_messages}
+    end
+
     private
 
     def set_release
@@ -23,14 +29,14 @@ class ReleasesController < ApplicationController
 
     def releases_params
         params.require(:release).permit(
-            :user_id,
-            :client_name,
-            :client_email,
-            :job_title,
-            :job_description,
-            :date_issued,
-            :date_signed,
-            :due_date
+            :jobTitle,
+            :clientFirstName,
+            :clientLastName,
+            :clientEmail,
+            :jobDescription,
+            :dueDate,
+            :additionalNotes,
+            :signed
         )
     end
 end

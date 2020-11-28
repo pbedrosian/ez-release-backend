@@ -1,9 +1,15 @@
-# README
+# EZ-Releasr
+### Simple Photo Relase Solution
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was created using Ruby on Rails in connection to the [EZ-Release Frontend](https://github.com/pbedrosian/ez-release-frontend), users are able to crate, store, and share photo release PDF's to new clients. 
 
-Things you may want to cover:
+## Getting Started
+To get started, you will need to clone this repo as well as the [EZ-Release Frontend](https://github.com/pbedrosian/ez-release-frontend). Once you have done this, run: 
+
+'rake db:migrate'
+'rake db:seed'
+'bunlde'
+'rails s'
 
 * Ruby version
 

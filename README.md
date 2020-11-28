@@ -6,25 +6,13 @@ This project was created using Ruby on Rails in connection to the [EZ-Release Fr
 ## Getting Started
 To get started, you will need to clone this repo as well as the [EZ-Release Frontend](https://github.com/pbedrosian/ez-release-frontend). Once you have done this, run: 
 
-'rake db:migrate'
-'rake db:seed'
-'bunlde'
-'rails s'
+`rake db:migrate`
+`rake db:seed`
+`bunlde`
+`rails s`
+
+Once the server is running, hop on over to the frontend repo and begin to explore!
 
 * Ruby version
+-  2.7.0
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
